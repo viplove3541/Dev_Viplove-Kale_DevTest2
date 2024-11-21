@@ -52,28 +52,28 @@
               </p>
             </div>
             <div class="banner__col-2">
-              <form action="thankyou.html">
+              <form action="thankyou.html" onsubmit="return validateForm()">
                 <div class="contact">
                   <h2 class="contact__title">Contact Us</h2>
 
                   <div class="contact__input-wrapper">
                     <div class="input-box contact__input-box">
-                      <input class="input-box__input" type="text" required />
+                      <input class="input-box__input" type="text" id="firstName" required />
                       <label class="input-box__label">First Name</label>
                       <label class="input-box__error">This field can’t be empty. Please fill it in.</label>
                     </div>
                     <div class="input-box contact__input-box">
-                      <input class="input-box__input" type="text" required />
+                      <input class="input-box__input" type="email" id="email" required />
                       <label class="input-box__label">Business Email</label>
                       <label class="input-box__error">This field can’t be empty. Please fill it in.</label>
                     </div>
                     <div class="input-box contact__input-box">
-                      <input class="input-box__input" type="text" required />
+                      <input class="input-box__input" type="text" id="lastName" required />
                       <label class="input-box__label">Last Name</label>
                       <label class="input-box__error">This field can’t be empty. Please fill it in.</label>
                     </div>
                     <div class="input-box contact__input-box">
-                      <input class="input-box__input" type="text" required />
+                      <input class="input-box__input" type="text" id="company" required />
                       <label class="input-box__label">Company</label>
                       <label class="input-box__error">This field can’t be empty. Please fill it in.</label>
                     </div>
@@ -645,6 +645,6 @@
       </footer>
       <script src="./js/index.js"></script>
     </main>
-    <!-- <img class="pixel-perfect-image" src="./360 Home@1x.png" alt="" /> -->
+    
   </body>
 </html>
